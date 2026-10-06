@@ -1,0 +1,168 @@
+{
+  "units": {
+    "Temperature": "\u00b0C",
+    "Substrate concentration": "g/L",
+    "Reactor working volume": "mL",
+    "S/V ratio": "m\u00b2/m\u00b3",
+    "Applied voltage": "V",
+    "Cathode projected surface area": "cm\u00b2"
+  },
+  "ranges": {
+    "CurrentDensity_All": {
+      "Temperature": {
+        "min": 4.0,
+        "max": 36.0
+      },
+      "Substrate concentration": {
+        "min": 0.5,
+        "max": 14.5
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 500.0
+      },
+      "S/V ratio": {
+        "min": 3.0,
+        "max": 100.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.1
+      },
+      "Cathode projected surface area": {
+        "min": 4.0,
+        "max": 250.0
+      }
+    },
+    "CurrentDensity_Acetate": {
+      "Temperature": {
+        "min": 20.0,
+        "max": 35.0
+      },
+      "Substrate concentration": {
+        "min": 0.6,
+        "max": 2.4
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 500.0
+      },
+      "S/V ratio": {
+        "min": 3.0,
+        "max": 100.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.1
+      },
+      "Cathode projected surface area": {
+        "min": 4.0,
+        "max": 250.0
+      }
+    },
+    "CurrentDensity_Complex": {
+      "Temperature": {
+        "min": 4.0,
+        "max": 36.0
+      },
+      "Substrate concentration": {
+        "min": 0.5,
+        "max": 14.5
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 462.0
+      },
+      "S/V ratio": {
+        "min": 4.0,
+        "max": 28.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.0
+      },
+      "Cathode projected surface area": {
+        "min": 7.0,
+        "max": 20.0
+      }
+    },
+    "H2Rate_All": {
+      "Temperature": {
+        "min": 4.0,
+        "max": 36.0
+      },
+      "Substrate concentration": {
+        "min": 0.5,
+        "max": 14.5
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 500.0
+      },
+      "S/V ratio": {
+        "min": 3.0,
+        "max": 100.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.1
+      },
+      "Cathode projected surface area": {
+        "min": 4.0,
+        "max": 250.0
+      }
+    },
+    "H2Rate_Acetate": {
+      "Temperature": {
+        "min": 20.0,
+        "max": 35.0
+      },
+      "Substrate concentration": {
+        "min": 0.6,
+        "max": 2.4
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 500.0
+      },
+      "S/V ratio": {
+        "min": 3.0,
+        "max": 100.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.1
+      },
+      "Cathode projected surface area": {
+        "min": 4.0,
+        "max": 250.0
+      }
+    },
+    "H2Rate_Complex": {
+      "Temperature": {
+        "min": 4.0,
+        "max": 36.0
+      },
+      "Substrate concentration": {
+        "min": 0.5,
+        "max": 14.5
+      },
+      "Reactor working volume": {
+        "min": 25.0,
+        "max": 462.0
+      },
+      "S/V ratio": {
+        "min": 4.0,
+        "max": 28.0
+      },
+      "Applied voltage": {
+        "min": 0.5,
+        "max": 1.0
+      },
+      "Cathode projected surface area": {
+        "min": 7.0,
+        "max": 20.0
+      }
+    }
+  }
+}

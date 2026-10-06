@@ -8,7 +8,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./Current_density/All/current_density_all.csv"
+          "full_path": "./dataset/Current_density/All/current_density_all.csv"
         }
       }
     },
@@ -19,7 +19,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./Current_density/Acetate/cd_acetate_all.csv"
+          "full_path": "./dataset/Current_density/Acetate/cd_acetate_all.csv"
         }
       }
     },
@@ -30,7 +30,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./Current_density/Complex_substrate/cd_complex_substance_all.csv"
+          "full_path": "./dataset/Current_density/Complex_substrate/cd_complex_substance_all.csv"
         }
       }
     },
@@ -41,7 +41,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./H2_Production_Rate/All/h2_production_rate_all.csv"
+          "full_path": "./dataset/H2_Production_Rate/All/h2_production_rate_all.csv"
         }
       }
     },
@@ -52,7 +52,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./H2_Production_Rate/Acetate/h2_acetate_all.csv"
+          "full_path": "./dataset/H2_Production_Rate/Acetate/h2_acetate_all.csv"
         }
       }
     },
@@ -63,7 +63,7 @@
       "group_col": null,
       "feature_sets": {
         "Set1": {
-          "full_path": "./H2_Production_Rate/Complex_substrate/h2_complex_substance_all.csv"
+          "full_path": "./dataset/H2_Production_Rate/Complex_substrate/h2_complex_substance_all.csv"
         }
       }
     }

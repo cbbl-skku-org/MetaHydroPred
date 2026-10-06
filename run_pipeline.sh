@@ -1,12 +1,7 @@
 #!/bin/bash
-# GIAI DOAN 3: Chay TOAN BO pipeline (baseline + meta-stacking) tren TOAN BO
-# du lieu (khong con 80/20, khong con 20 lan lap - LOOCV la danh gia xac
-# dinh nen chi can chay 1 lan). Nhanh hon Giai doan 2 rat nhieu (khong con
-# nhan voi 20).
-#
-# Cach dung:
-#   ./run_all_datasets.sh                          # chay ca 6 dataset
-#   ./run_all_datasets.sh CurrentDensity_Acetate    # chi 1 dataset
+# Usage
+#   ./run_pipeline.sh                          # chay ca 6 dataset
+#   ./run_pipeline.sh CurrentDensity_Acetate    # chi 1 dataset
 
 set -e
 

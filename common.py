@@ -28,6 +28,26 @@ def get_target_col(config_path, dataset_name):
     raise ValueError(f"Dataset '{dataset_name}' khong co trong config {config_path}")
 
 
+# number of inputs in each baseline feature set (BF1 = all six inputs, ..., BF4 = top three)
+BF_SIZES = {"BF1": 6, "BF2": 5, "BF3": 4, "BF4": 3}
+
+
+def load_bf_set(config_path, dataset_name, bf_set, results_dir):
+    """
+    Feature set BF1..BF4 of one task, rebuilt from the raw dataset and results_dir/<task>/feature_ranking.csv
+    (the top-k inputs in ranking order + the target in original units). Identical to the <BF>.csv written by
+    step1_generate_bf_sets.py, so those files do not have to be shipped.
+    """
+    with open(config_path) as f:
+        cfg = json.load(f)
+    d = next(x for x in cfg["datasets"] if x["name"] == dataset_name)
+    raw = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(config_path)), d["feature_sets"]["Set1"]["full_path"]))
+    ranked = pd.read_csv(os.path.join(results_dir, dataset_name, "feature_ranking.csv"))["feature"].tolist()
+    df = raw[ranked[:BF_SIZES[bf_set]]].copy()
+    df[d["target"]] = raw[d["target"]].to_numpy(dtype=float)
+    return df
+
+
 def compute_metrics(y_true, y_pred):
     """RMSE, MAE, R2, MAPE, SMAPE. Dung chung cho ca thang log1p va thang goc."""
     y_true = np.asarray(y_true, dtype=float)

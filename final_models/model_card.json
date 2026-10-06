@@ -1,0 +1,614 @@
+{
+  "built": "2026-10-06T16:12:57",
+  "libraries": {
+    "python": "3.9.25",
+    "scikit-learn": "1.6.1",
+    "xgboost": "2.1.4",
+    "catboost": "1.2",
+    "lightgbm": "4.6.0",
+    "numpy": "1.22.4",
+    "pandas": "2.0.3"
+  },
+  "tasks": {
+    "CurrentDensity_All": {
+      "task": "CurrentDensity_All",
+      "label": "Current density (All-organic)",
+      "n_samples": 72,
+      "meta_model": "SVR_linear",
+      "mf_level": "MF4",
+      "n_baselines": 20,
+      "meta_params": {
+        "C": 4.0
+      },
+      "baselines": [
+        {
+          "tag": "KNN_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "ET_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "KNN_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "ET_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "CB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "DT_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "SVR_rbf_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "RF_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "GB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "RF_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "RF_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "GB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "CB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "SVR_rbf_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "RF_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "DT_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.3904955450414742,
+        "MAE_log1p": 0.2919995712308629,
+        "R2_log1p": 0.8112860121819765,
+        "RMSE_orig": 72.89104115699924,
+        "MAE_orig": 36.47988782790216,
+        "R2_orig": 0.4165245670983223
+      },
+      "target_min": 7.0,
+      "target_max": 460.0,
+      "data_sha256": "6a64b50c6a36d98c"
+    },
+    "CurrentDensity_Acetate": {
+      "task": "CurrentDensity_Acetate",
+      "label": "Current density (Acetate)",
+      "n_samples": 32,
+      "meta_model": "SVR_sigmoid",
+      "mf_level": "MF2",
+      "n_baselines": 10,
+      "meta_params": {
+        "C": 4.0,
+        "gamma": 0.03125
+      },
+      "baselines": [
+        {
+          "tag": "CB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "KNN_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "LGBM_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "CB_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "KNN_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "CB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "ET_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "LGBM_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.5349233760356848,
+        "MAE_log1p": 0.3427556402920503,
+        "R2_log1p": 0.6785998571941583,
+        "RMSE_orig": 85.96014638438564,
+        "MAE_orig": 48.28946571886823,
+        "R2_orig": 0.4856268393338971
+      },
+      "target_min": 7.0,
+      "target_max": 460.0,
+      "data_sha256": "205a329c3f8fafb8"
+    },
+    "CurrentDensity_Complex": {
+      "task": "CurrentDensity_Complex",
+      "label": "Current density (Complex substrate)",
+      "n_samples": 40,
+      "meta_model": "HGB",
+      "mf_level": "MF2",
+      "n_baselines": 10,
+      "meta_params": {
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 10
+      },
+      "baselines": [
+        {
+          "tag": "ET_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "ET_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "KNN_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "KNN_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "KNN_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "DT_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "SVR_rbf_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "SVR_rbf_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "SVR_rbf_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.4191920070397676,
+        "MAE_log1p": 0.3249562189435935,
+        "R2_log1p": 0.7251398762467629,
+        "RMSE_orig": 34.71139458874193,
+        "MAE_orig": 25.15921280482897,
+        "R2_orig": 0.5749445944889144
+      },
+      "target_min": 10.0,
+      "target_max": 221.0,
+      "data_sha256": "5f9407753c7199cd"
+    },
+    "H2Rate_All": {
+      "task": "H2Rate_All",
+      "label": "H\u2082 production rate (All-organic)",
+      "n_samples": 72,
+      "meta_model": "KNN",
+      "mf_level": "MF4",
+      "n_baselines": 20,
+      "meta_params": {
+        "n_neighbors": 1,
+        "weights": "uniform"
+      },
+      "baselines": [
+        {
+          "tag": "CB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "GB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "KNN_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "RF_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "GB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "DT_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "ET_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "GB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "KNN_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "DT_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "XGB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "ET_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "RF_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "XGB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "RF_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "RF_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.2486674480609196,
+        "MAE_log1p": 0.1452402770470872,
+        "R2_log1p": 0.6671294765012086,
+        "RMSE_orig": 0.5899764590407165,
+        "MAE_orig": 0.3147222222222222,
+        "R2_orig": 0.6715066649102421
+      },
+      "target_min": 0.02,
+      "target_max": 5.4,
+      "data_sha256": "32e707507f60f784"
+    },
+    "H2Rate_Acetate": {
+      "task": "H2Rate_Acetate",
+      "label": "H\u2082 production rate (Acetate)",
+      "n_samples": 32,
+      "meta_model": "SVR_linear",
+      "mf_level": "MF2",
+      "n_baselines": 10,
+      "meta_params": {
+        "C": 1.0
+      },
+      "baselines": [
+        {
+          "tag": "SVR_poly_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "DT_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "SVR_rbf_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "MLP_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "LGBM_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "SVR_rbf_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "SVR_rbf_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "MLP_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "KNN_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "LGBM_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.264144258721581,
+        "MAE_log1p": 0.1859124083465761,
+        "R2_log1p": 0.6637174919084303,
+        "RMSE_orig": 0.8635132486015623,
+        "MAE_orig": 0.5003183900690635,
+        "R2_orig": 0.5397340378564344
+      },
+      "target_min": 0.03,
+      "target_max": 5.4,
+      "data_sha256": "d21d9c4b7e7dc84b"
+    },
+    "H2Rate_Complex": {
+      "task": "H2Rate_Complex",
+      "label": "H\u2082 production rate (Complex substrate)",
+      "n_samples": 40,
+      "meta_model": "AB",
+      "mf_level": "MF4",
+      "n_baselines": 20,
+      "meta_params": {
+        "learning_rate": 0.05,
+        "n_estimators": 50
+      },
+      "baselines": [
+        {
+          "tag": "KNN_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "ET_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "ET_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "SVR_rbf_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "GB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "GB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "DT_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "CB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "DT_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "SVR_rbf_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "XGB_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "XGB_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "RF_BF3",
+          "bf_set": "BF3",
+          "n_inputs": 4
+        },
+        {
+          "tag": "KNN_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "GB_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        },
+        {
+          "tag": "GB_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "RF_BF4",
+          "bf_set": "BF4",
+          "n_inputs": 3
+        },
+        {
+          "tag": "SVR_rbf_BF1",
+          "bf_set": "BF1",
+          "n_inputs": 6
+        },
+        {
+          "tag": "SVR_rbf_BF2",
+          "bf_set": "BF2",
+          "n_inputs": 5
+        }
+      ],
+      "loocv": {
+        "RMSE_log1p": 0.1611633235516873,
+        "MAE_log1p": 0.0951442510388268,
+        "R2_log1p": 0.7000064022355426,
+        "RMSE_orig": 0.304483700544245,
+        "MAE_orig": 0.1564756707709847,
+        "R2_orig": 0.6108303715920281
+      },
+      "target_min": 0.02,
+      "target_max": 2.01,
+      "data_sha256": "e72b424255ff7f47"
+    }
+  }
+}
