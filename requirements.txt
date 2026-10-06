@@ -1,0 +1,12 @@
+# Tested with Python 3.9.18. The saved model files (webserver/artifacts/*.joblib) are tied to these versions.
+numpy==1.22.4
+pandas==2.0.3
+scikit-learn==1.6.1
+xgboost==2.1.4
+catboost==1.2
+lightgbm==4.6.0
+joblib>=1.3
+openpyxl>=3.1          # only for the optional Excel summary tables
+# web server (optional)
+Flask==3.0.3
+gunicorn>=21.2

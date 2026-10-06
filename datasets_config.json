@@ -1,0 +1,71 @@
+{
+  "description": "MetaHydroPred: six prediction tasks (current density / H2 production rate x All-organic / Acetate / Complex substrate). Paths are relative to the repository root.",
+  "datasets": [
+    {
+      "name": "CurrentDensity_All",
+      "target": "Current density",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./Current_density/All/current_density_all.csv"
+        }
+      }
+    },
+    {
+      "name": "CurrentDensity_Acetate",
+      "target": "Current density",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./Current_density/Acetate/cd_acetate_all.csv"
+        }
+      }
+    },
+    {
+      "name": "CurrentDensity_Complex",
+      "target": "Current density",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./Current_density/Complex_substrate/cd_complex_substance_all.csv"
+        }
+      }
+    },
+    {
+      "name": "H2Rate_All",
+      "target": "H2 production rate",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./H2_Production_Rate/All/h2_production_rate_all.csv"
+        }
+      }
+    },
+    {
+      "name": "H2Rate_Acetate",
+      "target": "H2 production rate",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./H2_Production_Rate/Acetate/h2_acetate_all.csv"
+        }
+      }
+    },
+    {
+      "name": "H2Rate_Complex",
+      "target": "H2 production rate",
+      "id_col": null,
+      "group_col": null,
+      "feature_sets": {
+        "Set1": {
+          "full_path": "./H2_Production_Rate/Complex_substrate/h2_complex_substance_all.csv"
+        }
+      }
+    }
+  ]
+}
